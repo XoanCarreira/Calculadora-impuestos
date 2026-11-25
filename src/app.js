@@ -49,10 +49,13 @@ function init() {
     }
   }
 
-  function mostarCalculo() {
+  /**
+   * Muestra al usuario el total del cálculo
+   */
+  function mostrarCalculo() {
     let resultado = calcularImpuesto(Number(importe.value), tipo);
     txtResultado.textContent = `Total con impuestos del 21%: ${resultado}€`;
   }
 
-  btnCalcular.addEventListener("click", mostarCalculo);
+  btnCalcular.addEventListener("click", mostrarCalculo);
 }
