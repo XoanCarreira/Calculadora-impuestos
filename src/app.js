@@ -1,5 +1,8 @@
 window.addEventListener("DOMContentLoaded", init);
 
+/**
+ * Función principal que inicializa la aplicación
+ */
 function init() {
   const btnCalcular = document.getElementById("calcularBtn");
   const txtResultado = document.getElementById("resultadoTxt");
