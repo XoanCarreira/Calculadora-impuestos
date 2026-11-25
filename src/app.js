@@ -46,6 +46,9 @@ function init() {
     }
   }
 
+  /**
+   * Muestra el cálculo total en € al usuario
+   */
   function mostarCalculo() {
     let resultado = calcularImpuesto(Number(importe.value), tipo);
     txtResultado.textContent = `Total con impuestos del 21%: ${resultado}€`;
