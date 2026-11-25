@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  border: solid 2px #253a28;
+  border-radius: 5px;
+}
+
+#errorTxt {
+  color: red;
+}
+
+button {
+  padding: 10px 15px;
+  background: #253a28;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

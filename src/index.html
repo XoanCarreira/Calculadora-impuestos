@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de impuestos</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="calculadora.js" defer></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Calculadora de impuestos</h1>
+        <form>
+            <div>
+                <label for="importe">Indica el importe:</label>
+                <input type="text" id="importe" name="importe">
+            </div>
+            <button type="button" id="calcularBtn">Calcular impuestos</button>
+        </form>
+        <div>
+            <p id="resultadoTxt"></p>
+            <p id="errorTxt"></p>
+        </div>
+    </div>
+</body>
+
+</html>
