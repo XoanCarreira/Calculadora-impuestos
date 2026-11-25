@@ -1,0 +1,23 @@
+{
+  "name": "calculadora-impuestos",
+  "version": "1.0.0",
+  "description": "Calculadora de impuestos",
+  "homepage": "https://github.com/XoanCarreira/Calculadora-impuestos#readme",
+  "bugs": {
+    "url": "https://github.com/XoanCarreira/Calculadora-impuestos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XoanCarreira/Calculadora-impuestos.git"
+  },
+  "license": "ISC",
+  "author": "Juan Carreira",
+  "type": "commonjs",
+  "main": "src/calculadora.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.5"
+  }
+}
