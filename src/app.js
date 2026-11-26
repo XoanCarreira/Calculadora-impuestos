@@ -12,9 +12,9 @@ function init() {
 
   /**
    * Verifica si es un número y positivo
-   * @param {number} numero Numero a verificar
-   * @returns True o False según pase la verificación
-   * @throws Si no es un número o lo es pero negativo
+   * @param {number} numero Número o valor a verificar
+   * @returns {boolean} 'true' si pasa la verificación, en caso contrario 'false'
+   * @throws Lanza error si el parámetro no es un número o es negativo
    */
   function esNumero(numero) {
     let valido = false;
@@ -40,7 +40,7 @@ function init() {
    * Calcula el importe total aplicando el tipo impositivo
    * @param {number} neto Importe antes de impuestos
    * @param {number} tasa Tipo impositivo a aplicar
-   * @returns Importe total con impuestos
+   * @returns {number | undefined} Importe total con impuestos o 'undefined' y los datos no son válidos
    */
   function calcularImpuesto(neto, tasa) {
     if (esNumero(neto) && esNumero(tasa)) {
@@ -51,6 +51,7 @@ function init() {
 
   /**
    * Muestra al usuario el total del cálculo en €
+   * @returns {void}
    */
   function mostrarCalculo() {
     let resultado = calcularImpuesto(Number(importe.value), tipo);
