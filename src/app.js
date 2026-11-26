@@ -50,7 +50,7 @@ function init() {
   }
 
   /**
-   * Muestra al usuario el total del cálculo
+   * Muestra el total del cálculo
    */
   function mostrarCalculo() {
     let resultado = calcularImpuesto(Number(importe.value), tipo);
