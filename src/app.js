@@ -1,5 +1,8 @@
 window.addEventListener("DOMContentLoaded", init);
 
+/**
+ * Función principal que inicializa la aplicación
+ */
 function init() {
   const btnCalcular = document.getElementById("calcularBtn");
   const txtResultado = document.getElementById("resultadoTxt");
@@ -47,12 +50,15 @@ function init() {
   }
 
   /**
+   * Muestra al usuario el total del cálculo
+   */
+  /**
    * Muestra el cálculo total en € al usuario
    */
-  function mostarCalculo() {
+  function mostrarCalculo() {
     let resultado = calcularImpuesto(Number(importe.value), tipo);
     txtResultado.textContent = `Total con impuestos del 21%: ${resultado}€`;
   }
 
-  btnCalcular.addEventListener("click", mostarCalculo);
+  btnCalcular.addEventListener("click", mostrarCalculo);
 }
