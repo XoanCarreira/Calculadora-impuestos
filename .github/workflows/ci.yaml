@@ -14,8 +14,8 @@ jobs:
           node-version: '24'
           cache: 'npm'
       - run: npm ci
-      - run: npm npm test
-      - run: npx jsdoc src docs/api
+      - run: npm test
+      - run: npx jsdoc src -d docs/api
       - uses: actions/upload-artifact@v4
         with:
           name: documentacion
