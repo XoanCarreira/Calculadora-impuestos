@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "src/calculadora.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "node --test",
     "doc": "jsdoc src -d docs/api"
   },
   "devDependencies": {
