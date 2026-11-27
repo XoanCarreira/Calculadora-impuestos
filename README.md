@@ -5,7 +5,9 @@ Aplicacion web que calcula el total a pagar con una tasa del 21% sobre una canti
 
 
 ## Requisitos
-- Git (version 2.43 ou superior)
+- Git (v2.43 o superior)
+- Node (v24)
+- JsDoc (v4)
 
 
 ## Instalación
